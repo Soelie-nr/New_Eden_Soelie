@@ -1,0 +1,352 @@
+@font-face {
+  font-family: 'Roboto_Mono';  /* Choisissez un nom pour votre police */
+  src: url('../font/Roboto_Mono/static/RobotoMono-Medium.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Réinitialisation des paramêtre automatique du navigateur*/
+body {
+  margin: auto;
+  padding: auto;
+  background-color: #333;
+  font-family: 'Roboto_Mono','Open Sans', sans-serif;
+ 
+}
+
+/* =====Header=====*/
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: rgb(2, 0, 36);
+  
+}
+
+/* Conteneur .button_warpper */
+.buttonheader {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  width: 100%;
+  max-width: 1200px; /* Largeur maximale */
+  
+}
+
+/* Button  */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  text-decoration: none;
+ 
+}
+
+/* Est contenue par .buttonheader et contien button */
+.button__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 5px;
+
+}
+
+/* Texte des boutons */
+.button__text {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 2%;
+  white-space: nowrap;
+  
+}
+
+/* Style des button  */
+.button_style {
+  color: white;
+}
+
+.button_style:hover {
+  text-decoration: underline;
+}
+
+/* Pour que l'image sois la même quelque soit les élméments  */
+.img-limited {
+  max-width: 149px; 
+  max-height: 59px; 
+  width: auto; 
+  height: auto; 
+  object-fit: contain; /* Gère les images qui ne respectent pas les proportions */
+}
+
+
+/* =====Main===== */
+
+/* configure tout les Background des 3 pages  */
+.Background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;  
+  background-origin: border-box; 
+  background-size: cover; 
+  background-position: center;  
+  background-color: black;
+  width: 100%;
+  height: 100vh; /* Prend tout l'écran */
+}
+
+/* Titre principale - Fond d'écran */
+.BackgroundMain {
+ background-image: url(../images/background_main.jpg);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-repeat: no-repeat;  
+ background-origin: border-box; 
+ background-size: cover; 
+ background-position: center;  
+ background-color: black;
+ width: 100%;
+ height: 100vh; /* Prend tout l'écran */
+}
+
+.BackgroundUnivers{
+background-image: url(../images/background_universassocié.png);
+display: flex;
+justify-content: center;
+align-items: center;
+background-repeat: no-repeat;  
+background-origin: border-box; 
+background-size: cover; 
+background-position: center;  
+background-color: black;
+width: 100%;
+height: 100vh; /* Prend tout l'écran */
+}
+
+.BackgroundRetour {
+background-image: url(../images/Background_retourutilisateur.jpg);
+display: flex;
+justify-content: center;
+align-items: center;
+background-repeat: no-repeat;  
+background-origin: border-box; 
+background-size: cover; 
+background-position: center;  
+background-color: black;
+width: 100%;
+height: 100vh; /* Prend tout l'écran */
+}
+
+section {
+  flex-direction: column;
+  justify-items: center;
+}
+.pharagraphe {
+  padding-left: 5%;
+  padding-right: 5%;
+  overflow: hidden;
+}
+
+/* Titre principal */
+h1 {
+  display: flex;
+  text-align: center;
+  font-size: 6rem;
+  box-sizing: border-box; /* Inclut le padding dans les dimensions */
+  color: rgb(231, 228, 228);
+  text-shadow: 1px 1px 2px rgb(188, 188, 188);
+}
+/* Titre de paragraphe */
+h2 {
+  text-align: center;
+
+  font-size: 3rem;
+  color: white;
+}
+/* Titre pour les conteneurs  */
+h3 {
+  padding-top: 13vh;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 4rem;
+  color: white;
+}
+/* texte de paragraphe  */
+p {
+  text-wrap: wrap;
+  text-align: justify;
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 1.5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Import de vidéo youtube */
+iframe {
+  display: block;
+  padding-top: 5vh;
+}
+/* pour faire en sorte que ma grid s'adapte a la taille d'écrant demander  */
+.faction_warper {
+  display: flexbox;
+  max-width: 1200px;
+  align-items: center;
+}
+/* 6 box d'ancres*/
+.factions_box {
+  padding: 5vh 5vh 5vh 5vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5vh; /* Espacement entre les éléments */
+  
+}
+/* formaatage des ancres */
+.factions_box a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vh;
+  height: 50vh;
+  background-color: #333;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: black;
+  border-radius: 5px;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+/* Image de fonts des ancres */
+.Amarr {
+  background-image: url(../images/Amarr.png);
+}
+
+.Caldari {
+  background-image: url(../images/Carldari.png);
+}
+
+.Minmatar {
+  background-image: url(../images/Minmatar.png);
+}
+
+.Gallente {
+  background-image: url(../images/Gallente.png);
+}
+
+.Jove {
+  background-image: url(../images/Jove.webp);
+  
+}
+
+.AIR {
+  background-image: url(../images/AIR.png);
+}
+
+.factions_box a:hover{
+  transform: scale(1.1);
+  opacity: 0.7;
+  border-radius: 5%;
+}
+
+/* management de la liste  */
+ul {
+  display: flex;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+
+/* style de la liste  */
+li {
+  font-size: 2rem;
+  text-wrap:nowrap;
+
+}
+
+/* style des hyperlien */
+li a {
+  text-decoration: underline;
+  color: black;
+}
+
+li a:hover {
+  color: rgb(2, 0, 36);
+}
+
+/* formulaire */
+fieldset{
+  display: flexbox;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  flex-wrap: wrap;
+  color: aliceblue;
+  max-width: 25%;
+  padding-top: 2%;
+}
+
+/* alignement des checkbox */
+.check-btn {
+  display: flex;
+  align-self: start;
+  gap: 1%;
+}
+
+/* aside pour centrer le bouton send */
+aside {
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/* =====Footer===== */
+footer {
+  display: flex;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 10vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background: rgb(2, 0, 36);
+  align-items: center;
+}
+/* Contient les éléments de footer  */
+.elementfooter {
+  display: grid;
+  grid-template-columns: repeat(4, 25vh);
+  gap: calc(30vh - 50px); /* Espacement entre les éléments */
+  align-self: center;
+}
+
+/* Style des liens dans le footer */
+.elementfooter a img {
+  min-height: 150px;
+  min-width: 150px;
+  max-width: 25vh;
+  max-height: 25vh;
+}
+
+.elementfooter a:hover {
+  transform: scale(1.1);
+}
