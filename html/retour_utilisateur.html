@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Soélie.Nicolas--Robert" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link rel="icon" type="ico" href="../icones/favicon.ico" />
+    <title>Retour utilisateur</title>
+  </head>
+    <!-- Formalité Fin -->
+
+  <!-- Body début -->
+  <body>
+    <!-- Header début -->
+    <header>
+      <!-- contenant des bouton début  -->
+      <div class="buttonheader">
+        <!-- Bouton Retour utilisateur -->
+        <a href="" class="button button_style">
+          <div class="button__wrapper">
+            <span class="button__text">Retour utilisateur</span>
+          </div>
+        </a>
+
+        <!-- Bouton New Eden -->
+        <a href="../index.html" class="button button_style">
+          <div class="button__wrapper">
+            <span class="button__text">
+              <img src="../images/Logo.svg " alt="Logo d Eve Online" class="img-limited"/>
+            </span>
+          </div>
+        </a>
+
+        <!-- Bouton Univers associé -->
+        <a href="univers_associer.html" class="button button_style">
+          <div class="button__wrapper">
+            <span class="button__text">Univers associé</span>
+          </div>
+        </a>
+      </div>
+      <!--Contenant des boutons fin -->
+    </header>
+    <!-- Header end -->
+    <!---Main Début-->
+    <main>
+      <div class="Background">
+        <section class="BackgroundRetour">
+            <h1> Retour utilisateur</h1>
+        </section>
+      </div>
+      <!-- Formulaire Début  -->
+      <section class="formulaire_style">
+    <form action="../php/formulaire.php" method="POST">
+        <fieldset>
+            <legend><h2>Votre avis sur l'histoire !</h2></legend>
+            <!--Prénom-->
+              <label for="Prénom">Prénom :</label>
+              <input id="Prénom" name="Prénom" type="text" placeholder="*Champs obligatoire" required />
+
+            <!--Nom-->
+              <label for="Nom">Nom :</label>
+              <input id="Nom" name="Nom" type="text" placeholder="*Champs obligatoire" required />
+            <!-- E-mail -->
+             <label for="Adresse">Adresse mail :</label>
+             <input id="Adresse" name="Adresse" type="email" placeholder="*Champs obligatoire" required/>
+            <!-- Connaissance dans l'univers de la science fiction post-apo -->
+             <label for="Niveau_connaissance">Quelle est votre niveau de connaissance dans cette univers ? 
+                 <select name="'niveau">
+                     <option>Ne se prononse pas</option>
+                     <option>Nul</option>
+                     <option>Basse</option>
+                     <option>Moyenne</option>
+                     <option>Haute</option>
+                     <option>Absolue</option>
+                    </select>
+                </label>
+                <!-- Avis de la personne -->
+                <label for="textarea">Votre avis ?</label>
+                <textarea rows="20" cols="50" maxlength="1000" placeholder="Votre avis en moins de 1000 caractère" name="Avis"></textarea>
+                
+                 <!--Prise de contact Début-->
+            </legend>
+            <p>Voulez vous être recontacter ?</p>
+              <legend class="check-btn">
+              <input type="checkbox">
+              <label for="checkbox1" class="check-btn">Oui</label>
+              <input type="checkbox">
+              <label for="checkbox" class="check-btn">Non</label>
+            <!--Prise de contact Fin-->
+            </legend>
+        </fieldset>
+        <aside>
+            <input type="submit" class="submit">
+        </aside>
+    </form>
+</section>
+  </main>
+    <!---Main Fin-->
+    <!-- Footer début -->
+    <footer>
+    <section class="elementfooter">
+        <a href="https://www.eveonline.com/fr" target="_blank"> <img src="../images/Jeux.png" alt="Site officiel du jeu"> </a>
+        <a href="https://www.youtube.com/@eveonline" target="_blank"> <img src="../images/Youtube.png" alt="Youtube"> </a>
+        <a href="https://www.instagram.com/eveonline/" target="_blank"> <img src="../images/Instagram.png" alt="Instagram"></a>
+        <a href="https://www.discord.gg/eveonline" target="_blank"> <img src="../images/Discord.png" alt="Discord"> </a>
+    </footer>
+    <!-- Body Fin -->
+      </body>
+  </html>
+  
