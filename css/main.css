@@ -338,16 +338,32 @@ aside {
   flex-direction: row-reverse;
   height: auto;
   width: auto;
+  
   padding-right: 2vh;
 }
 
-nav {
+.faction_sommaire nav {
   padding-right: 2%;
   display: flex;
-   height: 25%;
+   height: fit-content;
    width: fit-content;
+   flex-direction: column;
 }
 
+.faction_sommaire a{
+  color: #888686;
+}
+
+.faction_sommaire img {
+  width: 25%;
+  height: auto;
+  align-self: center;
+}
+
+.faction_sommaire ul {
+  display: flex;
+  flex-direction: column;
+}
 /* =====Footer===== */
 footer {
   display: flex;
