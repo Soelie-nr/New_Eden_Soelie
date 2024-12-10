@@ -18,3 +18,16 @@ l’information
 • CE4.04 : en utilisant les outils favorisant un développement itératif et collaboratif
 • CE4.05 : en veillant à la sécurité des systèmes et des données
 
+Créer un site web mettant en avant une période historique (Histoire de France
+ou non, voire issue d’une fiction telles que le seigneur des anneaux ou starwars
+par exemple), ses évènements, lieux, personnes/personnages, etc.
+Cette première SAE orientée Web, vous permettra de mettre en pratique les notions abordées dans
+les ressources des deux dernières semaines :
+- Les bases de la conception d’un site web statique (Wireframe, HTML, CSS, système de grille
+pour la structuration de la page, …).
+- La méthodologie de développement et les bonnes pratiques (indentation, commentaires,
+structuration des pages, arborescence, versionning …).
+- Les notions d’algorithmie, permettant de mettre en place des aspects simples de gestion de
+contenus et de données en PHP.
+- Les notions liées aux réseaux informatiques (composants, configuration, transfert de données
+…), permettant de mettre en ligne votre site internet (FTP, serveur, hébergeur).
